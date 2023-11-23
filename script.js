@@ -72,6 +72,40 @@ console.log(
   "****************************************************************\n"
 );
 
+function iterate_for_in(tab) {
+  for (let item in tab) {
+    console.log("item: ", item);
+  }
+  return tab;
+}
+
+console.log(
+  "****************************************************************\n"
+);
+console.log("demo of iterative  progrma flow : for In loop \n");
+console.log("result : ", iterate_for_in([1, 2, 3]));
+
+console.log(
+  "****************************************************************\n"
+);
+
+function iterate_for_of(tab) {
+  for (let item of tab) {
+    console.log("item: ", item);
+  }
+  return tab;
+}
+
+console.log(
+  "****************************************************************\n"
+);
+console.log("demo of iterative  progrma flow : for Of loop \n");
+console.log("result : ", iterate_for_of([1, 2, 3]));
+
+console.log(
+  "****************************************************************\n"
+);
+
 function iterate_while(n) {
   let index = 0;
   while (index <= n) {
