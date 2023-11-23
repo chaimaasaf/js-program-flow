@@ -143,3 +143,28 @@ console.log("result : ", iterate_do_while(10));
 console.log(
   "****************************************************************\n"
 );
+
+/// break and continue demo
+
+function test(tab) {
+  for (let i = 0; i < tab.length; i++) {
+    if (i > tab.length / 2) {
+      console.log("you reached the middle of the tab");
+      break;
+    }
+    if (i % 2 == 0) {
+      console.log(i, "pair");
+      continue;
+    }
+    if (i % 2 != 0) {
+      console.log(i, "inpair");
+      continue;
+    }
+  }
+}
+
+console.log(
+  test([
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+  ])
+);
