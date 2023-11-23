@@ -21,3 +21,8 @@ console.log(tab);
 
 tab.shift();
 console.log(tab);
+
+var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+console.log(days);
+delete days[days.length - 2];
+console.log(days);
